@@ -1,0 +1,249 @@
+DSA-CHARAKTERBOGEN – UPDATE 0.23.0
+=================================
+
+Dieser Stand baut auf Version 0.22.0 auf und verbessert Generator,
+Startseite und PDF-Ausgabe.
+
+Neu in 0.23.0:
+- Talent- und Zauberlisten behalten beim Steigern ihre Scrollposition
+- Rüstkammer und Warenkorb behalten beim Kaufen und Zuordnen ihre Scrollposition
+- bewusste Generator-Schrittwechsel beginnen weiterhin oben
+- Charaktergenerator steht auf der Startseite an erster Stelle
+- Import steht an zweiter Stelle, der leere Bogen an dritter Stelle
+- keine Owlbear-Rodeo-Bezeichnung mehr auf der Startseite
+- PDF-Download jetzt auch direkt aus dem fertigen digitalen Heldenbogen
+- derselbe vollständige A4-Bogen für generierte, importierte und manuelle Helden
+- 85 erfolgreiche automatisierte Tests
+
+Bereits in 0.22.0:
+- in jeder Trefferzone nur noch dafür bestimmte Gegenstände auswählbar
+- Kettenhemden und andere allgemeine Rüstungen ausschließlich am Torso
+- Helme ausschließlich am Kopf, Armzeug ausschließlich an den Armen
+- Beinschutz ausschließlich bei den Beinen und Schuhe im Schuhfeld
+- nicht tragbare Ausrüstung bleibt automatisch im Rucksack
+- für beide Arme werden bei einzelnen Armschienen zwei Exemplare benötigt
+- dieselbe zentrale Zuordnungslogik in Generator, Digitalbogen und PDF
+- durchsuchbare Rüstkammer jetzt auch im fertigen digitalen Heldenbogen
+- vollständige Katalogwerte beim Übernehmen in bestehende Helden
+- Inventartabelle kennzeichnet Körperzone oder Rucksack
+- unpassende alte Zuordnungen werden automatisch in den Rucksack zurückgelegt
+- 85 erfolgreiche automatisierte Tests
+
+Bereits in 0.21.0:
+- sechs kompakte Körperfelder: Kopf, Torso, linker Arm, rechter Arm, Beine und Schuhwerk
+- Gegenstände im Generator und im digitalen Inventar direkt den Körperfeldern zuordnen
+- nicht zugeordnete Ausrüstung automatisch im Rucksack anzeigen
+- Rüstungsschutz je Trefferzone statt eines irreführenden addierten Gesamt-RS
+- Beine kompakt zusammengefasst; derselbe RS gilt für jedes Bein
+- Belastungswert nach Kopf ×1, Torso ×5, Arme ×2 und Beine ×2 je Bein
+- automatische Rüstungs-BE und zusätzlicher GS-/INI-Abzug
+- identische Körperzonen- und Rucksackdarstellung im PDF-Heldenbogen
+- vorhandene Sicherungen werden automatisch um leere Körperzonen ergänzt
+- 83 erfolgreiche automatisierte Tests
+
+Bereits in 0.20.0:
+- Andalus für Bogenkopf, Seitenüberschriften und Heldenname
+- Gentium Basic Regular für Fließtext, Tabellen und Listen
+- Gentium Basic Bold für Feldwerte und Hervorhebungen
+- Gentium Basic Italic für Notizen und Fußzeilen
+- alle vier TrueType-Dateien vollständig im PDF eingebettet
+- identische PDF-Schrift auf Mac, iPad und anderen Geräten ohne lokale Installation
+- Bürger-, Geweihten-, Hexen- und Magierpaket aus dem Laufzeitkatalog entfernt
+- in der Rüstkammer erscheinen nur noch die sechs tatsächlich kaufbaren Pakete
+- PDF- und Paketkatalog durch automatisierte Tests abgesichert
+- 79 erfolgreiche automatisierte Tests
+
+Bereits in 0.19.0:
+- eigener Knopf "PDF herunterladen" im letzten Generator-Schritt
+- echtes A4-PDF, vollständig im Browser erzeugt und ohne Druckdialog gespeichert
+- vier Grundseiten für Person, Talente, Kampf und Ausrüstung
+- Stammdaten, Eigenschaften, Ressourcen, AP, Vorteile, Nachteile und Sonderfertigkeiten
+- alle Talente und Kampftechniken sowie Waffen, Rüstungen, Helme und Zustände
+- Tragkraft, Inventar, Geldbeutel und freie Zeilen für handschriftliche Ergänzungen
+- automatische Zauberseite nur für magisch Begabte
+- automatische Liturgieseite nur für Geweihte
+- eigener, tintensparender Stil nach der Themenaufteilung des offiziellen Heldendokuments
+- PDF-Download lässt Generatorentwurf und interaktiven Bogen unverändert
+- 79 erfolgreiche automatisierte Tests
+
+Bereits in 0.18.0:
+- Auswahl "nicht magisch / magisch begabt" in Schritt 1 (Konzept)
+- elfische Herkunft und magische Professionen aktivieren Magiebegabung automatisch
+- der vorletzte Reiter heißt bei Magiebegabten "Talente & Zauber"
+- Professionszauber starten mit ihren enthaltenen Fertigkeitswerten
+- weitere Zauber und Rituale sind durchsuchbar, aktivierbar und steigerbar
+- Aktivierungs- und Steigerungskosten werden vom gemeinsamen AP-Konto abgezogen
+- Fertigkeitswert und Anzahl aktivierter Zauber folgen dem Erfahrungsgrad
+- bei nicht magisch Begabten bleibt der Zauberbereich vollständig ausgeblendet
+- leere Ausrüstungspakete werden in der Rüstkammer nicht mehr angezeigt
+- 76 erfolgreiche automatisierte Tests
+
+Bereits in 0.17.2:
+- adaptive Schrittleiste nach dem Prinzip der Safari-Tabs
+
+Enthalten in 0.17.2:
+- alle zehn Tabs passen sich gemeinsam an die verfügbare Breite an
+- keine horizontale Scrollleiste mehr
+- aktiver Tab wird automatisch breiter und zeigt Nummer plus Bezeichnung
+- inaktive Tabs werden bei wenig Platz zu kompakten nummerierten Kreisen
+- im breiten Direktstart erscheinen alle Bezeichnungen
+- Safari-inspirierte, leicht transparente und abgerundete Darstellung
+- vollständige Tastaturbeschriftung und Tooltips für kompakte Tabs
+- 73 erfolgreiche automatisierte Tests
+
+Bereits in 0.17.1:
+- überlappende Reiter als klar erkennbare Schrittfolge
+- nummerierte Kreise 1 bis 10 bleiben immer sichtbar
+- erledigte, aktuelle und kommende Schritte sind farblich unterscheidbar
+- Beschriftungen bleiben auch in schmalen Owlbear- und iPad-Fenstern erhalten
+- horizontales Scrollen statt zusammengedrückter oder fehlerhafter Reiter
+- der aktuelle Schritt wird automatisch in der Leiste zentriert
+- 73 erfolgreiche automatisierte Tests
+
+Bereits in 0.17.0:
+- neuer vorletzter Generator-Reiter "Talente steigern"
+- alle 59 Talente durchsuchbar und punktweise steigerbar
+- Ausgangswerte aus Kultur- und Professionspaket werden automatisch berücksichtigt
+- AP-Kosten nach Steigerungsspalte und Maximum des Erfahrungsgrads
+- Zielwerte und übrige AP werden in den fertigen Heldenbogen übernommen
+- sechs kaufbare Ausrüstungspakete: Abenteurer, Adlige, Höhlenforscher,
+  Reise, Stadt und Wildnis
+- Paketbestandteile werden einzeln in den Warenkorb gelegt und bleiben bearbeitbar
+- Bürger-, Geweihten-, Hexen- und Magierpaket sind sichtbar als derzeit ohne
+  veröffentlichte Regelwiki-Inhaltsliste gekennzeichnet
+- Info-Knopf im Rüstkammerkatalog einheitlich direkt rechts neben "Kaufen"
+- 73 erfolgreiche automatisierte Tests
+
+Bereits in 0.16.0:
+- alle 16 Helme der offiziellen Regelwiki-Übersicht als eigene Kategorie
+- Kopf-RS, Rüstungstyp, Preis, Gewicht, Vorteil, Nachteil und Zusatzregeln
+- Helme werden getrennt von Ganzkörperrüstungen in den Heldenbogen übernommen
+- das bisherige i-Zeichen wurde überall durch das gewünschte Bildsymbol ersetzt
+- zentrales Grafikregister für spätere Gestaltungselemente
+- versioniertes Druckdatenmodell für einen späteren druckbaren Heldenbogen
+- noch keine sichtbare Druckschaltfläche; das Layout kann später ergänzt werden
+
+Bereits in 0.15.0:
+- der Generator-Schritt "Ausrüstung" heißt jetzt "Rüstkammer"
+- über 1.500 kaufbare Waffen, Schilde, Rüstungen und Ausrüstungsgegenstände
+- Info-Knopf mit Preis, Gewicht, Kampf- und Rüstungswerten
+- Herstellungskomplexität, besondere Regelmerkmale, Quelle und Seite
+- direkte Links zur Regelwiki-Suche und zur passenden Rüstkammer-Übersicht
+- Infofenster auch in der Waffen- und Rüstungssuche des fertigen Heldenbogens
+- Info-Knopf wird in Safari zuverlässig als echter Kreis dargestellt
+
+Bereits in 0.14.0:
+- kleiner Info-Knopf neben jeder Sonderfertigkeit
+- Hover am Mac sowie Antippen/Klicken auf Touch-Geräten
+- Kurzbeschreibung, Voraussetzungen, AP-Kosten, Stufen, Quelle und Seite
+- Link zur passenden Suche im offiziellen DSA-Regelwiki
+- Kurzbeschreibungen für 1.237 von 1.243 Sonderfertigkeiten
+- strukturierte Voraussetzungen für 1.031 Sonderfertigkeiten
+- gestaffelte AP-Kosten wie bei Finte I-III werden korrekt addiert
+
+Bereits in 0.13.0:
+- "Neu beginnen" stellt das AP-Konto vollständig auf den gewählten Erfahrungsgrad zurück
+- alle Eigenschaften beginnen nach dem Reset wieder bei 8
+- Kulturpaket und Profession sind nach dem Reset abgewählt
+- Pflichtvorteile und Traditionen werden nicht mehr zusätzlich zum vollständigen Professionspreis berechnet
+- 564 Professionspakete und Varianten aus 35 Quellen
+- Gruppenfilter: Weltliche, Kämpfer, Ordensleute, Zauberer und Geweihte
+- neuere Regelwiki-Pakete für Adoru, Nachtalben, Tahayaschamanen und Ojomyaa
+- 134 Vorteile, 88 Nachteile und 1.243 Sonderfertigkeiten im Generator-Katalog
+
+Bereits enthalten:
+- sichtbarer Knopf "Neu beginnen" mit Sicherheitsabfrage
+- vollständiger Reset des Generatorentwurfs einschließlich Einkauf
+- Generator-Schritt "Rüstkammer"
+- Suche und Filter für Inventar, Waffen, Schilde und Rüstungen
+- mehr als 1.500 kaufbare Einträge aus dem integrierten Ausrüstungskatalog
+- Startkapital 750 Silbertaler; Reich/Arm ändern es automatisch um 250 S je Stufe
+- Warenkorb mit Mengensteuerung, Ausgaben, Restgeld und Gesamtgewicht
+- gekaufte Gegenstände werden mit ihren Kampf- und Rüstungswerten übernommen
+- übrig gebliebenes Geld wird in Dukaten, Silber, Heller und Kreuzer übertragen
+- neuer Reiter "Zustände"
+- Betäubung, Entrückung, Furcht, Paralyse, Schmerz und Verwirrung in Stufe 0 bis IV
+- automatische Schmerzstufe aus den aktuellen Lebenspunkten
+- addierte Zustandserschwernis bis maximal 5 und Warnung ab 8 Zustandsstufen
+- Zustandsabzüge werden bei 3W20-Proben sowie AT, PA und AW berücksichtigt
+- Tragkraft nach KK x 2 Stein
+- je 4 volle Stein über der Tragkraft eine Belastungsstufe
+- Inventar, ausgerüstete Rüstung und zusätzliche Last werden getrennt berechnet
+- Tragkraftmodifikator, weitere Belastung und Belastungsreduktion einstellbar
+- Zustände und Tragkraft erscheinen im GM-Gruppenmonitor und auf der Kartenanzeige
+- Charaktergenerator in zehn übersichtlichen Schritten
+- Erfahrungsgrad und regelgerechtes AP-Konto
+- Mensch, Halbelf, Elf und Zwerg mit passenden Eigenschaftsmaxima
+- 12 Herkunftsvarianten und 40 Kulturpakete
+- 564 Professionspakete und Varianten mit Gruppen- und Quellenfilter
+- 134 Vorteile und 88 Nachteile aus den eingebundenen Regelbänden
+- 1.243 durchsuchbare allgemeine, Kampf- und Magie-Sonderfertigkeiten
+- Geoden für zwergische Helden sowie weitere elfische und magische Professionen
+- alle 279 in den Professionspaketen referenzierten Zauber werden aufgelöst
+- Prüfung von Eigenschafts-, AP- und 80-AP-Grenzen
+- Pflichtvorteile und Traditionen für Magiebegabte und Geweihte
+- der fertige Held wird direkt als interaktiver Bogen geöffnet
+- die Vorschlagslisten zeigen jeden Namen nur noch einmal an
+- interne Kleinbuchstaben-Kennungen werden im Rolldown nicht mehr eingeblendet
+- vollständiger gemeinsamer Katalog aus aktueller Regelwiki und DarkAid
+- insgesamt 211 Vorteile und 104 Nachteile
+- neuer Reiter "Biografie"
+- Spezies, Kultur und Profession werden aus Optolith und DarkAid übernommen
+- die drei Herkunftsangaben sind auch direkt bearbeitbar
+- 29 Speziesvarianten, 40 Kulturen und 315 Professionen sind durchsuchbar
+- sämtliche Vorteile und Nachteile sind durchsuchbar
+- Stufe und freie Ausprägung eines Vor- oder Nachteils können bearbeitet werden
+- Einträge können hinzugefügt und entfernt werden
+- vorhandene Owlbear-Sicherungen werden beim Laden automatisch ergänzt
+- sichtbare Versionsnummer 0.23.0 zur Cache-Kontrolle
+
+UPLOAD
+------
+1. Diese ZIP-Datei auf dem Mac doppelt anklicken.
+2. Den entpackten Ordner "github-update-v0.23.0" öffnen.
+3. Im GitHub-Repository auf "Add file" und "Upload files" klicken:
+   https://github.com/1Sabuto1-bip/DSA-Charakterbogen_Owlbear
+4. ALLE Inhalte des geöffneten Ordners in das Upload-Fenster ziehen.
+5. Unten "Commit changes" anklicken.
+
+GITHUB PAGES
+------------
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
+
+OWLBEAR
+-------
+Nach dem Upload Owlbear vollständig neu laden. Falls noch eine andere Version
+erscheint, die Erweiterung im Profil entfernen und neu installieren mit:
+https://1sabuto1-bip.github.io/DSA-Charakterbogen_Owlbear/manifest.json?v=0230
+
+BEDIENUNG
+---------
+Auf der Startseite "Charaktergenerator öffnen" wählen. Der Entwurf wird
+automatisch im Browser gespeichert. Nach dem letzten Prüfschritt wird der
+Held als normaler interaktiver Bogen geöffnet. Noch nicht ausgegebene AP
+können anschließend im Reiter "Steigern" verteilt werden.
+
+Im letzten Schritt "Prüfen" kann mit "PDF herunterladen" ein druckbarer
+A4-Heldenbogen gespeichert werden. Der Entwurf bleibt dabei erhalten. Erst
+"Heldenbogen anlegen" öffnet den interaktiven Bogen und schließt den Generator.
+
+Im vorletzten Generator-Reiter "Talente & Zauber" werden die Werte aus Kultur
+und Profession als Ausgangspunkt angezeigt. Mit Plus und Minus können weitere
+Punkte verteilt werden; AP-Konto und Höchstwert werden sofort geprüft. Der
+Zauberbereich erscheint nur, wenn in Schritt 1 Magiebegabung gewählt wurde oder
+Herkunft beziehungsweise Profession sie automatisch vorgeben.
+
+Im Schritt "Rüstkammer" Gegenstände suchen, nach Waffen/Rüstungen/Helmen/Inventar
+filtern und mit "Kaufen" in den Warenkorb legen. Der Generator verhindert
+Einkäufe über dem Startkapital. Mit "Neu beginnen" oben rechts lässt sich
+der gesamte Entwurf nach einer Sicherheitsabfrage zurücksetzen.
+
+Über "Ausrüstungspakete" lassen sich veröffentlichte Pakete vollständig in den
+Warenkorb übernehmen. Jeder Bestandteil bleibt danach einzeln änderbar.
+
+Nach dem Laden eines vorhandenen Helden den Reiter "Biografie" öffnen. Dort können
+Spezies, Kultur und Profession korrigiert sowie Vor- und Nachteile gesucht,
+hinzugefügt, bearbeitet oder entfernt werden. Alle Änderungen werden wie die
+übrigen Heldenwerte automatisch im Browser gespeichert.

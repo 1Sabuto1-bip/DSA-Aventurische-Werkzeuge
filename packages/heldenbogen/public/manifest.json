@@ -1,0 +1,14 @@
+{
+  "name": "Aventurischer Heldenbogen",
+  "version": "0.25.0",
+  "manifest_version": 1,
+  "description": "Interaktiver DSA-5-Heldenbogen mit zonengerechter Ausrüstung, gemeinsamer Rüstkammer, Rucksack, A4-PDF, Zuständen und Kampf",
+  "author": "Alexander Hoffmann",
+  "action": {
+    "title": "Heldenbogen",
+    "icon": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/heldenbogen/icon.svg?v=0250",
+    "popover": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/heldenbogen/?v=0250",
+    "height": 760,
+    "width": 680
+  }
+}

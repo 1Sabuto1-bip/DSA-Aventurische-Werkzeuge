@@ -1,0 +1,22 @@
+{
+  "name": "Aventurischer NSC-Namensgenerator",
+  "version": "0.5.0",
+  "manifest_version": 1,
+  "description": "Regionale DSA-Namen für Menschen und andere Spezies erzeugen",
+  "icon": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/nsc-generator/icon.svg?v=050",
+  "author": "Alexander Hoffmann",
+  "homepage_url": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/nsc-generator/?v=050",
+  "action": {
+    "title": "NSC-Namen",
+    "icon": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/nsc-generator/icon.svg?v=050",
+    "popover": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/nsc-generator/?v=050",
+    "height": 900,
+    "width": 1000
+  },
+  "permissions": [
+    {
+      "name": "clipboard-write",
+      "reason": "Erzeugte Namen und Kurzprofile mit dem Kopieren-Knopf in die Zwischenablage übernehmen"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183b32">
+  <meta name="description" content="Zufällige DSA-5-Händlersortimente nach Geschäft, Qualität und Preisniveau erstellen.">
+  <title>Aventurischer Händlergenerator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">Aventurische Werkzeuge</a>
+    <a class="source-link" href="https://dsa.ulisses-regelwiki.de/RK_Ausruestung.html" target="_blank" rel="noopener">Regelwiki ↗</a>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Werkzeug für Spielleitungen</p>
+      <h1 id="title">Händlergenerator</h1>
+      <p>Stelle mit einem Klick ein passendes Sortiment zusammen. Besondere Waren sind mit einem Stern gekennzeichnet.</p>
+    </section>
+
+    <section class="generator" aria-label="Händler zusammenstellen">
+      <form id="generator-form" class="controls">
+        <fieldset>
+          <legend>Sortiment</legend>
+          <label><input type="radio" name="quality" value="small" checked><span><b>Kleiner Krämerladen</b><small>Kleine Auswahl, keine besonderen Waren</small></span></label>
+          <label><input type="radio" name="quality" value="normal"><span><b>Normales Sortiment</b><small>0–1 besonderer Gegenstand</small></span></label>
+          <label><input type="radio" name="quality" value="good"><span><b>Gutes Sortiment</b><small>1–2 besondere Gegenstände</small></span></label>
+          <label><input type="radio" name="quality" value="veryGood"><span><b>Sehr gutes Sortiment</b><small>2–3 besondere Gegenstände</small></span></label>
+          <label><input type="radio" name="quality" value="excellent"><span><b>Exzellente Auswahl</b><small>3–4 besondere Gegenstände</small></span></label>
+        </fieldset>
+
+        <div class="select-grid">
+          <label class="select-label">Gebiet
+            <select id="category">
+              <option value="mixed">Gemischtwaren</option>
+              <option value="travel">Reisebedarf</option>
+              <option value="craft">Handwerkszeug</option>
+              <option value="alchemy">Alchemie</option>
+              <option value="food">Essen &amp; Proviant</option>
+            </select>
+          </label>
+          <label class="select-label">Preisniveau
+            <select id="price-level">
+              <option value="0.75">Sehr günstig (−25 %)</option>
+              <option value="0.9">Günstig (−10 %)</option>
+              <option value="1" selected>Üblich</option>
+              <option value="1.25">Teuer (+25 %)</option>
+              <option value="1.5">Sehr teuer (+50 %)</option>
+            </select>
+          </label>
+        </div>
+        <button class="generate" type="submit"><span>Sortiment auswürfeln</span><span aria-hidden="true">⚄</span></button>
+      </form>
+
+      <section class="result" aria-live="polite">
+        <div class="result-head">
+          <div>
+            <p id="shop-type" class="eyebrow">Kleiner Krämerladen · Gemischtwaren</p>
+            <h2 id="shop-name">Zum gefüllten Reisebeutel</h2>
+          </div>
+          <button id="reroll-name" class="secondary" type="button">Neuer Ladenname</button>
+        </div>
+
+        <div class="summary" id="summary"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Ware</th><th>Kategorie</th><th class="number">Vorrat</th><th class="number">Preis</th></tr></thead>
+            <tbody id="stock"></tbody>
+          </table>
+        </div>
+        <div class="empty" id="empty" hidden>Wähle die Einstellungen und würfle ein Sortiment aus.</div>
+      </section>
+    </section>
+
+    <p class="footnote">Grundlage: offizielle DSA-Regelwiki-Rüstkammer. Preise sind Richtwerte und werden durch das gewählte Preisniveau verändert.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

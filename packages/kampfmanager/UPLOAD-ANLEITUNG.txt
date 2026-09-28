@@ -1,0 +1,37 @@
+DSA-CHARAKTERBOGEN – GITHUB-UPDATE 0.3.0
+=========================================
+
+Neu in dieser Version:
+- Heldenbogen ohne JSON-Datei selbst anlegen
+- Name, Eigenschaften und Abenteuerpunkte bearbeiten
+- alle 59 Talente eintragen, suchen und würfeln
+- alle 21 Kampftechniken eintragen
+- Ressourcen, Inventar und Geldbörse bearbeiten
+- manuell angelegte Bögen als Owlbear-JSON sichern und wieder laden
+
+UPLOAD
+------
+1. Diese ZIP-Datei auf dem Mac doppelt anklicken.
+2. Den entpackten Ordner "github-update-v0.3.0" öffnen.
+3. Im GitHub-Repository auf "Add file" und "Upload files" klicken:
+   https://github.com/1Sabuto1-bip/DSA-Charakterbogen_Owlbear
+4. ALLE Inhalte des geöffneten Ordners in das Upload-Fenster ziehen.
+   Nicht den übergeordneten Ordner selbst hineinziehen.
+5. Unten "Commit changes" anklicken.
+
+GITHUB PAGES
+------------
+Die vorhandene Einstellung bleibt:
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
+
+OWLBEAR
+-------
+Die bereits installierte Erweiterung verwendet weiterhin diese Adresse:
+https://1sabuto1-bip.github.io/DSA-Charakterbogen_Owlbear/manifest.json
+
+Nach dem Upload Owlbear vollständig neu laden. Falls die alte Version im Cache
+bleibt, die Erweiterung im Profil entfernen und mit folgender Adresse neu anlegen:
+https://1sabuto1-bip.github.io/DSA-Charakterbogen_Owlbear/manifest.json?v=030
+

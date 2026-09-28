@@ -1,0 +1,14 @@
+{
+  "name": "Aventurischer Händlergenerator",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Zufällige DSA-Händler nach Sortiment, Fachgebiet und Preisniveau erzeugen",
+  "author": "Alexander Hoffmann",
+  "action": {
+    "title": "Händlergenerator",
+    "icon": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/favicon.svg?v=100",
+    "popover": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/haendlergenerator/?v=100",
+    "height": 800,
+    "width": 1080
+  }
+}

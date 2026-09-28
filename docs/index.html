@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#163c32" />
+    <meta name="description" content="Direkter Einstieg zu Heldenverwaltung, Kampfmanager, NSC-Generator und Händlergenerator." />
+    <title>Aventurische Werkzeuge</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#werkzeuge">Zu den Werkzeugen springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Aventurische Werkzeuge – Startseite">
+        <span class="brand-mark" aria-hidden="true">AW</span>
+        <span><b>Aventurische</b><small>Werkzeuge</small></span>
+      </a>
+      <nav aria-label="Seitennavigation">
+        <a href="#werkzeuge">Werkzeuge</a>
+        <a href="#owlbear">Owlbear</a>
+        <a href="#hinweise">Hinweise</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">DSA 5 · Spieltisch-Werkzeuge</p>
+          <h1 id="page-title">Helden verwalten.<br />Kämpfe leiten.<br />Aventurien beleben.</h1>
+          <p class="intro-copy">Vier eigenständige Werkzeuge für eure Runde – gemeinsam an einem Ort, direkt im Browser und als Erweiterungen für Owlbear Rodeo.</p>
+        </div>
+        <div class="availability" aria-label="Verfügbarkeit">
+          <span><i aria-hidden="true"></i> Im Browser nutzbar</span>
+          <span><i aria-hidden="true"></i> Für Mac und iPad</span>
+          <span><i aria-hidden="true"></i> Owlbear-kompatibel</span>
+        </div>
+      </section>
+
+      <section class="tool-grid" id="werkzeuge" aria-label="Verfügbare Werkzeuge">
+        <article class="tool-card tool-card--hero">
+          <div class="card-topline"><span>Für Spielende</span><b>Version 0.25.0</b></div>
+          <div class="tool-symbol" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img"><path d="M16 8h25l9 9v39H16z"/><path d="M41 8v10h9M23 28h20M23 36h20M23 44h12"/></svg>
+          </div>
+          <h2>Aventurischer Heldenbogen</h2>
+          <p>Helden erschaffen, importieren und verwalten. Mit AP-Konto, Rüstkammer, Zaubern, Körperzonen und druckbarem PDF.</p>
+          <ul>
+            <li>Geführter Charaktergenerator</li>
+            <li>Digitaler Heldenbogen</li>
+            <li>PDF-Ausgabe</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary-action" href="./heldenbogen/?v=0250" target="_blank" rel="noreferrer">Heldenbogen öffnen <span aria-hidden="true">↗</span></a>
+            <button class="copy-action" type="button" data-copy="./heldenbogen/manifest.json?v=0250">Owlbear-Link kopieren</button>
+          </div>
+        </article>
+
+        <article class="tool-card tool-card--combat">
+          <div class="card-topline"><span>Für die Spielleitung</span><b>Version 0.3.0</b></div>
+          <div class="tool-symbol" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img"><path d="M14 12l36 40M50 12L14 52M13 11l8 2-6 6zM51 11l-8 2 6 6z"/><circle cx="32" cy="32" r="8"/></svg>
+          </div>
+          <h2>Meister-Kampfmanager</h2>
+          <p>Helden und Gegner in einer Initiative verwalten. Mit fertigen Gegnern, Schwierigkeitsstufen, Zuständen und Kampfprotokoll.</p>
+          <ul>
+            <li>DSA-5-Gegnerpresets</li>
+            <li>Eigene Gegner und Helden</li>
+            <li>Gemeinsame Kampfrunde</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary-action" href="./kampfmanager/?v=030" target="_blank" rel="noreferrer">Kampfmanager öffnen <span aria-hidden="true">↗</span></a>
+            <button class="copy-action" type="button" data-copy="./kampfmanager/manifest.json?v=030">Owlbear-Link kopieren</button>
+          </div>
+        </article>
+
+        <article class="tool-card tool-card--nsc">
+          <div class="card-topline"><span>Für die Spielleitung</span><b>Version 0.5.0</b></div>
+          <div class="tool-symbol" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img"><circle cx="32" cy="22" r="10"/><path d="M15 53c2-12 9-18 17-18s15 6 17 18M20 17l-6-5M44 17l6-5M32 9V3"/></svg>
+          </div>
+          <h2>Aventurischer NSC-Generator</h2>
+          <p>Passende Namen und kurze Charakterprofile für spontane Begegnungen erzeugen. Nach Spezies, Region, Geschlecht und sozialem Status.</p>
+          <ul>
+            <li>59 Namenskulturen</li>
+            <li>Aussehen und Eigenarten</li>
+            <li>Regionale Namensformen</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary-action" href="./nsc-generator/?v=050" target="_blank" rel="noreferrer">NSC-Generator öffnen <span aria-hidden="true">↗</span></a>
+            <button class="copy-action" type="button" data-copy="./nsc-generator/manifest.json?v=050">Owlbear-Link kopieren</button>
+          </div>
+        </article>
+
+        <article class="tool-card tool-card--merchant">
+          <div class="card-topline"><span>Für die Spielleitung</span><b>Version 1.0.0</b></div>
+          <div class="tool-symbol" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img"><path d="M12 25h40l-4-13H16zM16 25v28h32V25M25 53V37h14v16M9 25h46M20 18h24"/></svg>
+          </div>
+          <h2>Aventurischer Händlergenerator</h2>
+          <p>Zufällige Händler und Warenangebote erzeugen. Mit Sortimentsqualität, Preisniveau, Fachgebiet, Vorräten und besonderen Waren.</p>
+          <ul>
+            <li>Fünf Sortimentsstufen</li>
+            <li>84 Ausrüstungsgegenstände</li>
+            <li>Preisniveau und Vorrat</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary-action" href="./haendlergenerator/" target="_blank" rel="noreferrer">Händlergenerator öffnen <span aria-hidden="true">↗</span></a>
+            <button class="copy-action" type="button" data-copy="./haendlergenerator/manifest.json?v=100">Owlbear-Link kopieren</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="owlbear-panel" id="owlbear" aria-labelledby="owlbear-title">
+        <div class="panel-number" aria-hidden="true">01</div>
+        <div>
+          <p class="eyebrow">Am virtuellen Spieltisch</p>
+          <h2 id="owlbear-title">In Owlbear Rodeo verwenden</h2>
+          <p>Kopiere den Installationslink des gewünschten Werkzeugs. Füge ihn anschließend in Owlbear Rodeo unter den Erweiterungen als benutzerdefinierte Erweiterung ein. Alle vier Werkzeuge lassen sich unabhängig voneinander installieren.</p>
+        </div>
+        <ol>
+          <li><span>1</span>Link bei der Werkzeugkarte kopieren</li>
+          <li><span>2</span>Owlbear Rodeo öffnen</li>
+          <li><span>3</span>Unter Erweiterungen einfügen</li>
+        </ol>
+      </section>
+
+      <section class="notes" id="hinweise" aria-labelledby="notes-title">
+        <div>
+          <p class="eyebrow">Gut zu wissen</p>
+          <h2 id="notes-title">Browser und Owlbear teilen sich nicht automatisch alle Daten</h2>
+        </div>
+        <p>Die Programme speichern lokale Entwürfe im verwendeten Browser. Für eine andere Person oder ein anderes Gerät empfiehlt sich der JSON-Export. Owlbear-Funktionen stehen nur zur Verfügung, wenn das jeweilige Werkzeug als Erweiterung geöffnet wird.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>Aventurische Werkzeuge</span>
+      <p>Inoffizielles Fanprojekt für Das Schwarze Auge. Keine Verbindung zu Ulisses Spiele.</p>
+      <a href="#top">Nach oben ↑</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

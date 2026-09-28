@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183d35" />
+    <meta name="description" content="Aventurische NSC-Namen und Kurzprofile für Menschen und andere Spezies nach Herkunft, Geschlecht und sozialem Status erzeugen." />
+    <title>Aventurischer NSC-Namensgenerator</title>
+    <link rel="icon" href="./favicon.svg?v=050" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=050" />
+    <script src="./name-data.js?v=050" defer></script>
+    <script src="./regional-name-data.js?v=050" defer></script>
+    <script src="./species-data.js?v=050" defer></script>
+    <script src="./profile-data.js?v=050" defer></script>
+    <script src="./app.js?v=050" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="app-header">
+        <div class="sigil" aria-hidden="true">N</div>
+        <div>
+          <p class="eyebrow">Aventurische Werkzeuge</p>
+          <h1>NSC-Namensgenerator</h1>
+        </div>
+        <span class="prototype-badge">9 Spezies · 59 Namenskulturen</span>
+      </header>
+
+      <section class="generator" aria-labelledby="generator-title">
+        <div class="controls">
+          <div class="section-heading">
+            <span>01</span>
+            <div><p class="eyebrow">Auswahl</p><h2 id="generator-title">Wer soll einen Namen erhalten?</h2></div>
+          </div>
+
+          <div class="field-row">
+            <label class="select-field" for="species">
+              <span>Spezies</span>
+              <select id="species">
+                <option value="human">Mensch</option>
+                <option value="achaz">Achaz</option>
+                <option value="elf">Elf</option>
+                <option value="goblin">Goblin</option>
+                <option value="grolm">Grolm</option>
+                <option value="ogre">Oger</option>
+                <option value="ork">Ork</option>
+                <option value="troll">Troll</option>
+                <option value="dwarf">Zwerg</option>
+              </select>
+            </label>
+
+            <label class="select-field" for="variant">
+              <span id="variant-label">Region</span>
+              <select id="variant"></select>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <fieldset>
+              <legend>Geschlecht</legend>
+              <div class="choice-grid">
+                <label><input type="radio" name="gender" value="female" checked /><span>Weiblich</span></label>
+                <label><input type="radio" name="gender" value="male" /><span>Männlich</span></label>
+              </div>
+            </fieldset>
+
+            <label class="select-field" for="status">
+              <span>Sozialer Status</span>
+              <select id="status">
+                <option value="simple">Einfaches Volk</option>
+                <option value="respected" selected>Angesehener Stand</option>
+                <option value="upper">Oberschicht</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="generate-button" id="generate" type="button">
+            <span>Neuen Namen erzeugen</span><b aria-hidden="true">✦</b>
+          </button>
+        </div>
+
+        <div class="result-panel" aria-live="polite">
+          <div class="section-heading section-heading--light">
+            <span>02</span>
+            <div><p class="eyebrow">Ergebnis</p><h2>Der Name lautet</h2></div>
+          </div>
+          <div class="name-result">
+            <p id="generated-name">–</p>
+            <span id="generated-meta">Andergast · weiblich · angesehener Stand</span>
+          </div>
+          <p class="construction" id="construction-note"></p>
+          <section class="profile-card" aria-labelledby="profile-title">
+            <h3 id="profile-title">Kurzprofil</h3>
+            <dl>
+              <div><dt>Aussehen</dt><dd id="profile-appearance"></dd></div>
+              <div><dt>Eigenart</dt><dd id="profile-trait"></dd></div>
+              <div><dt>Besonderheit</dt><dd id="profile-special"></dd></div>
+            </dl>
+          </section>
+          <button class="copy-button" id="copy-name" type="button">Name und Profil kopieren</button>
+        </div>
+      </section>
+
+      <section class="explanation" aria-labelledby="explanation-title">
+        <div>
+          <p class="eyebrow">Regionale Namensform</p>
+          <h2 id="explanation-title">Warum klingt der Name so?</h2>
+        </div>
+        <div class="rule-card">
+          <strong id="rule-title">Andergast · angesehener Stand</strong>
+          <p id="rule-description"></p>
+        </div>
+        <p class="source-note">Grundlage: <i>Aventurische Namen</i>, menschliche Regionen S. 10–70 sowie Namen anderer Spezies S. 76–89. Die Kurzprofile werden frei kombiniert.</p>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "DSA5 Meister-Kampfmanager",
+  "version": "0.3.0",
+  "manifest_version": 1,
+  "description": "DSA5-Kampfverwaltung mit 443 Gegner-Presets, Menschen-Schnellgegnern, Initiative, LeP und Zuständen",
+  "author": "Alexander Hoffmann",
+  "action": {
+    "title": "Kampfmanager",
+    "icon": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/kampfmanager/icon.svg?v=030",
+    "popover": "https://1sabuto1-bip.github.io/DSA-Aventurische-Werkzeuge/kampfmanager/?v=030",
+    "height": 780,
+    "width": 1180
+  }
+}
