@@ -9,6 +9,8 @@ const items = [
   ['Proviant für 1 Tag','food',.5,1.5,false],['Brot, 1 Laib','food',.4,.5,false],['Hartwurst','food',.8,.5,false],['Käse','food',.6,.5,false],['Trockenfleisch','food',1,.5,false],['Getrocknete Früchte','food',.8,.5,false],['Nüsse','food',.5,.5,false],['Mehl, 1 Stein','food',.2,1,false],['Salz, 1 Stein','food',.5,1,false],['Honig, 1 Krug','food',2,1,false],['Bier, 1 Maß','food',.2,1,false],['Wein, einfacher, 1 Maß','food',.5,1,false],['Rotwein, guter, 1 Maß','food',3,1,true],['Gewürzmischung','food',8,.1,true],['Kaffee, 1 Pfund','food',12,.5,true],['Tee, 1 Pfund','food',8,.5,true],['Südfrucht','food',2,.25,true],['Proviantpaket Wüstenreich','food',8,4,true]
 ].map(([name,category,price,weight,special])=>({name,category,price,weight,special}));
 
+items.push(...combatItems);
+
 const quality = {
   small:{label:'Kleiner Krämerladen',count:[5,7],special:[0,0],qty:[1,4]},
   normal:{label:'Normales Sortiment',count:[7,10],special:[0,1],qty:[1,6]},
@@ -16,8 +18,8 @@ const quality = {
   veryGood:{label:'Sehr gutes Sortiment',count:[11,14],special:[2,3],qty:[2,10]},
   excellent:{label:'Exzellente Auswahl',count:[13,16],special:[3,4],qty:[2,12]}
 };
-const categoryNames={mixed:'Gemischtwaren',travel:'Reisebedarf',craft:'Handwerkszeug',alchemy:'Alchemie',food:'Essen & Proviant'};
-const itemCategoryNames={travel:'Reise',craft:'Handwerk',alchemy:'Alchemie',food:'Proviant'};
+const categoryNames={mixed:'Gemischtwaren',travel:'Reisebedarf',craft:'Handwerkszeug',alchemy:'Alchemie',food:'Essen & Proviant',weapons:'Waffen',armor:'Rüstungen'};
+const itemCategoryNames={travel:'Reise',craft:'Handwerk',alchemy:'Alchemie',food:'Proviant',weapons:'Waffen',armor:'Rüstung'};
 const first=['Zum','Bei','Am','Im Haus zum'];
 const nouns=['gefüllten Reisebeutel','silbernen Südweiser','roten Kupferkessel','flinken Packesel','ehrlichen Handel','goldenen Löffel','sicheren Weg','grünen Kräuterbund','klugen Raben','alten Wegstein'];
 const $=id=>document.getElementById(id);
@@ -42,7 +44,7 @@ function generate(){
   const regularPool=shuffle(poolFor(cat,false));
   let regular=[];
   if(cat==='mixed'){
-    regular=['travel','craft','alchemy','food'].map(group=>shuffle(items.filter(i=>!i.special&&i.category===group))[0]);
+    regular=['travel','craft','alchemy','food','weapons','armor'].map(group=>shuffle(items.filter(i=>!i.special&&i.category===group))[0]);
     const seeded=new Set(regular.map(i=>i.name));
     regular=regular.concat(regularPool.filter(i=>!seeded.has(i.name)).slice(0,Math.max(0,total-specialCount-regular.length)));
   } else {
